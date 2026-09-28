@@ -1,22 +1,11 @@
 # Mission Reflection
 
-> Target: 250–350 words. Write this in your own words based on what YOU experienced.
-> Delete these hints before submitting. If AI helped you, disclose it if your instructor requires.
+This laboratory activity helped me understand why cloud applications use different types of storage depending on their requirements. Object storage is better suited for storing millions of photos because it is designed for large amounts of unstructured data. Instead of treating every photo like a traditional disk block, object storage stores files as objects with metadata and unique identifiers inside buckets. This makes it practical for applications such as photo-sharing platforms where users continuously upload and retrieve images.
 
-**1. Why is object storage better suited for millions of photos than a traditional block storage hard drive?**
-Hints: scalability, flat structure vs. fixed disk size, metadata, cost, access over HTTP.
+Using Docker also made deploying the MinIO storage server easier. Instead of manually installing and configuring all the required components, I was able to start MinIO using a Docker image and a single command. The environment variables allowed me to configure the administrator username and password, while the port mappings allowed me to access the MinIO service through the browser. This showed me how containers can make application deployment more consistent and convenient.
 
-**2. How did Docker make it easier to deploy MinIO?**
-Hints: one command, no manual installation, image already packaged, easy to remove/restart.
+A bucket is a logical container used to organize objects in object storage. In this activity, I created a bucket called `client-photos`, which served as the storage location for the sample file that I uploaded.
 
-**3. What is a "bucket"?**
-Hints: a container for objects, similar to a top-level folder, but flat.
+Large enterprise companies can protect object storage data from physical server failures by using redundancy, replication, backups, and distributed storage systems. Instead of relying on only one physical server, copies of data can be stored across multiple disks, servers, or locations. This helps prevent data loss when hardware fails.
 
-**4. How do large companies keep object storage from being lost if a server crashes?**
-Hints: replication across servers/data centers, multiple availability zones, erasure coding, backups.
-
-**5. How is your confidence with the Linux command line growing?**
-Hints: be honest — which commands did you use, what was easy or hard?
-
-## My Reflection
-(Write your 250–350-word reflection here.)
+My confidence in navigating the Linux command line is also improving. At first, commands can look unfamiliar, especially when several options are included in one command. However, practicing Docker commands, checking running containers with `docker ps`, and understanding command options helped me become more comfortable working in the terminal. This activity showed me that understanding what each command does is more important than simply memorizing it.
