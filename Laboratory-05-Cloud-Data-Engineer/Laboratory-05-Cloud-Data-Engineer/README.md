@@ -1,36 +1,51 @@
-# Laboratory 05: The Cloud Data Engineer
+# Mission 5: The Cloud Data Engineer
 
 ## Mission Overview
-In this mission, I was reassigned to the Cloud Data Engineering Team at CloudNova Technologies. The client is building a photo-sharing application and needs a place to store millions of user-uploaded images. Because containers are ephemeral, images cannot live inside the web server container. I built a proof-of-concept Object Storage environment by deploying MinIO (an S3-compatible server) using Docker on a KillerCoda Playground, creating a bucket named `client-photos`, and uploading a test file through the web console.
+
+In this mission, I explored cloud storage and deployed an S3-compatible object storage server using MinIO and Docker. I learned how Block Storage, File Storage, and Object Storage differ and how object storage can be used to store large amounts of unstructured data such as images and backups.
+
+I also accessed the MinIO Web Console through a forwarded port, created a bucket named `client-photos`, and uploaded a sample file.
 
 ## Objectives
-- Differentiate between Block, File, and Object Storage.
-- Deploy an S3-compatible Object Storage server (MinIO) using Docker.
-- Access a cloud service through a web interface using port forwarding.
-- Create a storage bucket and upload objects (files) to the cloud.
-- Document cloud storage operations using Markdown.
-- Continue expanding a professional GitHub Cloud Computing Portfolio.
+
+* Differentiate between Block, File, and Object Storage.
+* Deploy MinIO using Docker.
+* Access a cloud service through port forwarding.
+* Create an object storage bucket.
+* Upload an object to the bucket.
+* Document cloud storage operations using Markdown.
+* Maintain a professional GitHub Cloud Computing Portfolio.
 
 ## Tools Used
-- KillerCoda Ubuntu Playground
-- Docker
-- MinIO (`minio/minio` image)
-- MinIO Web Console (port 9001)
-- GitHub and Markdown
-- Web browser
+
+* KillerCoda Playground
+* Ubuntu
+* Docker
+* MinIO
+* GitHub
+* Web Browser
+* Markdown
 
 ## Skills Learned
-- Explaining the differences between block, file, and object storage
-- Running a containerized service with `docker run`, port mapping (`-p`), and environment variables (`-e`)
-- Verifying running containers with `docker ps`
-- Accessing a service running on a specific port through the browser
-- Creating buckets and uploading objects in S3-compatible storage
-- Documenting technical work in Markdown and organizing a GitHub repository
 
-## Repository Contents
-| File | Description |
-|------|-------------|
-| `storage-types-research.md` | Block vs File vs Object storage comparison |
-| `minio-deployment.md` | Technical steps for the MinIO deployment |
-| `reflection.md` | Mission reflection |
-| `screenshots/` | Evidence screenshots |
+* Understanding different types of cloud storage
+* Running containerized applications with Docker
+* Using Docker environment variables
+* Working with ports and port forwarding
+* Creating and managing object storage buckets
+* Uploading objects through a web interface
+* Documenting technical procedures using Markdown
+* Managing a GitHub Cloud Computing Portfolio
+
+## Repository Structure
+
+```text
+Laboratory-05-Cloud-Data-Engineer/
+├── README.md
+├── storage-types-research.md
+├── minio-deployment.md
+├── reflection.md
+└── screenshots/
+    ├── minio-deployed.png
+    └── minio-bucket-upload.png
+```
